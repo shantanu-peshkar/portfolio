@@ -1,0 +1,306 @@
+/* Navbar Styles */
+.navbar {
+  padding: 0.8rem 1rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}
+
+/* Home Section Styling */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f4f4f4, #ddd);
+  flex-direction: column;
+  background-image: url(mern-banner.jpg);
+  background-size: cover;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px white;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.intro {
+  font-size: 1.6rem;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Section Padding */
+section {
+  padding: 60px 20px;
+}
+
+/* Skill Circle Styling */
+.skill-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-image {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Project Card Styling */
+.card {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Hidden Cards */
+.hidden-cards {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons */
+/* .btn {
+  
+  color: white;
+} */
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  text-decoration: underline;
+}
+
+/* Education Section */
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.timeline .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer Spacing */
+.abc {
+  margin-left: 470px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .skill-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .timeline li {
+    padding-left: 30px;
+  }
+
+  .timeline .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .abc {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    padding: 40px 10px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+
+  .skill-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-image {
+    width: 60%;
+    height: 60%;
+  }
+
+  .timeline li {
+    padding-left: 20px;
+  }
+
+  .timeline .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+.btn-dark{
+  height: 40px;
+  width: 80px;
+}
+
+.intro-line {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+
+/* Initial state for the fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Slide up effect */
+  transition: opacity 0.6s ease, transform 1.5s ease;
+}
+
+/* Visible state */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
+
+.skill-circle {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.skill-circle.visible {
+  opacity: 1;
+}
+
+.timeline li {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.timeline li.visible {
+  opacity: 1;
+}
+
+.about ul {
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Ensures proper alignment */
+  display: inline-block; /* Aligns list items vertically */
+}
+
+.about li {
+  margin: 10px 0; /* Adds space between items */
+  display: flex; /* Aligns icon and text */
+  align-items: center;
+}
+
+.about li img {
+  margin-right: 10px; /* Space between the image and text */
+}
+
