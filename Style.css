@@ -304,3 +304,31 @@ form {
   margin-right: 10px; /* Space between the image and text */
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+  flex-wrap: wrap; /* Allows wrapping for small screens */
+}
+
+.icon {
+  width: 80px; /* Default size */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 60px; /* Smaller size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    width: 40px; /* Smaller size for mobile phones */
+  }
+}
