@@ -312,7 +312,7 @@ form {
   gap: 20px; /* Space between the icons */
   margin-top: 20px;
   text-align: center; /* Ensures that text is aligned properly around the icons */
-  margin-left: 180px; /* Move the icons 20px to the left */
+  margin-left: 150px; /* Move the icons 20px to the left */
 }
 
 /* Style for each icon */
