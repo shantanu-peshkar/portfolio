@@ -304,31 +304,41 @@ form {
   margin-right: 10px; /* Space between the image and text */
 }
 
+/* Style for the contact icons container */
 .icon-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Space between icons */
-  flex-wrap: wrap; /* Allows wrapping for small screens */
+  display: flex; /* Flexbox layout */
+  justify-content: flex-start; /* Align icons to the left */
+  align-items: center; /* Vertically center the icons */
+  gap: 20px; /* Space between the icons */
+  margin-top: 20px;
+  text-align: center; /* Ensures that text is aligned properly around the icons */
+  margin-left: 180px; /* Move the icons 20px to the left */
 }
 
-.icon {
-  width: 80px; /* Default size */
-  height: auto; /* Maintain aspect ratio */
-  transition: transform 0.3s ease; /* Smooth hover effect */
+/* Style for each icon */
+.icon-container .icon {
+  width: 50px; /* Set a base size for the icons */
+  height: 50px; /* Set a base size for the icons */
+  object-fit: contain; /* Make sure the icons don't stretch */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 
-.icon:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
+/* Hover effect to slightly scale the icons */
+.icon-container .icon:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
 
+/* Responsive adjustment for small screens */
 @media (max-width: 768px) {
-  .icon {
-    width: 60px; /* Smaller size for tablets */
+  .icon-container .icon {
+    width: 35px; /* Reduce the size of icons on smaller screens */
+    height: 35px;
   }
 }
 
 @media (max-width: 480px) {
-  .icon {
-    width: 40px; /* Smaller size for mobile phones */
+  .icon-container .icon {
+    width: 30px; /* Even smaller icons on very small screens */
+    height: 30px;
   }
 }
