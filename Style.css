@@ -310,14 +310,14 @@ form {
   justify-content: center; /* Center the icons horizontally */
   align-items: center; /* Vertically center the icons */
   gap: 20px; /* Space between the icons */
-  margin-top: 20px;
+  margin-bottom: 15px;
   text-align: center; /* Ensures that text is aligned properly around the icons */
 }
 
 /* Style for each icon */
 .icon-container .icon {
-  width: 40px; /* Set a base size for the icons */
-  height: 40px; /* Set a base size for the icons */
+  width: 50px; /* Set a base size for the icons */
+  height: 50px; /* Set a base size for the icons */
   object-fit: contain; /* Make sure the icons don't stretch */
   transition: transform 0.3s ease; /* Smooth scaling effect */
 }
